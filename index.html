@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather app</title>
+    <link rel="stylesheet" href="source/wapp.css" />
+   
+    
+  </head>
+  <body>
+  
+    
+    <div class="container">
+    <div class="row" id="location">
+      
+      <form>
+        <div class="col-6">
+        <input type="text" placeholder="Enter a city name" id="field" />
+        </div>
+        <div class="col-3">
+        <input type="submit" value="Search" id="submit" />
+    
+        </div>
+        <div class="col-3">
+          <button id="geo" onclick="test();return false;">Current Location</button>
+        </div>
+      </form>
+      
+    </div>
+      <div class="row" id="city">
+        <div class="col-6" id="main">Rome</div>
+        <div class="col-3" id="degrees">18° </div>
+        <div class="col-3" id="sky" >Sunny ☀</div>
+        <div class="col-12" id="current-time">Time</div>
+        <div class="col-12">Precipitation 25%</div>
+      </div>
+        <div class="row" id="next-hours">
+         
+        <div class="col-2" id="hours">Now
+       <br>18°</br>
+       </div>
+        <div class="col-1"id="hours">1hr
+          <br>18° </br>
+        </div>
+        <div class="col-1"id="hours">2hrs
+          <br>18° </br>
+        </div>
+        <div class="col-1"id="hours">3hrs
+          <br>18° </br>
+        </div>
+        <div class="col-1"id="hours">4hrs
+          <br>18° </br>
+        </div>
+        <div class="col-1"id="hours">5hrs
+          <br>18° </br>
+        </div>
+        <div class="col-1"id="hours">6hrs
+          <br>18° </br>
+        </div>
+        <div class="col-1"id="hours">7hrs
+          <br>18° </br>
+        </div>
+        <div class="col-1"id="hours">9hrs
+          <br>18° </br>
+          
+        </div>
+        </div>
+        <div class="row" id="forecast">
+        <div class="col-6">Tomorrow</div>
+        <div class="col-1"id="daytime">5°</div>
+        <div class="col-1" id="daytime">🌤</div>
+        <div class="col-1"id="night">1°</div>
+        <div class="col-1"id="night">🌙</div>
+        <div class="col-6">Tuesday</div>
+        <div class="col-1" id="daytime">5°</div>
+        <div class="col-1" id="daytime">🌤</div>
+        <div class="col-1" id="night">1°</div>
+        <div class="col-1"id="night">🌙</div>
+        <div class="col-6">Wednesday</div>
+       <div class="col-1"id="daytime">5°</div>
+        <div class="col-1"id="daytime">🌤</div>
+        <div class="col-1"id="night">1°</div>
+        <div class="col-1"id="night">🌙</div>
+        <div class="col-6">Thursday</div>
+        <div class="col-1"id="daytime">5°</div>
+        <div class="col-1"id="daytime">🌤</div>
+        <div class="col-1"id="night">1°</div>
+        <div class="col-1"id="night">🌙</div>
+        <div class="col-6">Friday</div>
+      <div class="col-1"id="daytime">5°</div>
+        <div class="col-1"id="daytime">🌤</div>
+        <div class="col-1"id="night">1°</div>
+        <div class="col-1"id="night">🌙</div>
+        </div>
+        <div class="row" id="choice">
+        <div class="col-1" id="button1">
+      <button>°C</button>
+    </div>
+    <div class="col-1" id="button2">
+<button>°F</button>
+
+
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </body>
+  <script src="js/weatherapp.js">
+   
+
+
+  </script>
+</html>

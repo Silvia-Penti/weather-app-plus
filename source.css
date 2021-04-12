@@ -1,0 +1,80 @@
+.container {
+  border-radius: 5px;
+  background-color: transparent;
+  background-image: url("https://images.pexels.com/photos/2113554/pexels-photo-2113554.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: 100%;
+}
+
+#field {
+  margin-top: 20px;
+  opacity: 50%;
+}
+#city {
+  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  opacity: 50%;
+  font-family: "Dancing Script", cursive;
+}
+#main {
+  font-size: 50px;
+  text-transform: capitalize;
+}
+#degrees,
+#sky {
+  display: block;
+  margin-top: 20px;
+  font-size: 30px;
+}
+#next-hours {
+  border-radius: 5px;
+  width: 80%;
+  margin: 20px auto;
+  background-color: whitesmoke;
+  opacity: 50%;
+}
+#hours {
+  margin-top: 10px;
+  display: block;
+}
+#forecast {
+  border-radius: 5px;
+  width: 80%;
+  margin: 20px auto;
+  background-color: whitesmoke;
+  opacity: 50%;
+}
+.col-6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#daytime,
+#night {
+  margin-top: 10px;
+}
+
+#night {
+  margin-left: 3px;
+}
+.col-2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#submit {
+  border-radius: 4px;
+}
+button,
+#submit {
+  opacity: 50%;
+  border-radius: 4px;
+}
+button:hover,
+#submit:hover {
+  cursor: pointer;
+  transition: all 200ms ease;
+  opacity: 0.7;
+  background-color: grey;
+  color: white;
+}
