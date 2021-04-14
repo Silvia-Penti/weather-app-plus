@@ -19,17 +19,18 @@
     
   </head>
   <body>
-  
-    
     <div class="container">
     <div class="row" id="location">
-      
       <form>
-        <div class="col-6">
+        <div>
+        <div class="col-3">
         <input type="text" placeholder="Enter a city name" id="field" />
-        </div>
         <div class="col-3">
         <input type="submit" value="Search" id="submit" />
+      
+       
+         </div>
+       
     
         </div>
         <div class="col-3">
@@ -38,10 +39,17 @@
       </form>
       
     </div>
+    <div class="weather">
       <div class="row" id="city">
-        <div class="col-6" id="main">Rome</div>
-        <div class="col-3" id="degrees">18° </div>
-        <div class="col-3" id="sky" >Sunny ☀</div>
+        <div class="col-4" id="main">Rome</div>
+        <div class="col-4" id="degrees">18
+                                <span id="choice"> 
+                                    <a>°C</a> 
+                                        | 
+                                    <a>°F</a>
+                                </span> </div>
+
+        <div class="col-4" id="sky" >Sunny ☀</div>
         <div class="col-12" id="current-time">Time</div>
         <div class="col-12">Precipitation 25%</div>
       </div>
@@ -102,21 +110,24 @@
         <div class="col-1"id="daytime">🌤</div>
         <div class="col-1"id="night">1°</div>
         <div class="col-1"id="night">🌙</div>
-        </div>
-        <div class="row" id="choice">
-        <div class="col-1" id="button1">
-      <button>°C</button>
-    </div>
-    <div class="col-1" id="button2">
-<button>°F</button>
-<p>This code is created by Silvia Pentia and it is open-source on GitHub</p>
+       </div>
 
 
+</div>
+<p id="open-source">
+       Open source code by <a href="https://github.com/Silvia-Penti/weather-app-plus" target="_blank"> Silvia Pentia </a>
+    
+   </p>
+   <p id="netlify">
+       Hosted by <a href="https://www.netlify.com/" id="netLink" target="_blank"> Netlify </a>
+   </p>
         </div>
       </div>
     </div>
     </div>
     </div>
+    
+ 
     </div>
   </body>
   <script src="javascript.js">
